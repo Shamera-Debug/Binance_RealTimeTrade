@@ -3,6 +3,7 @@
 분류 모델과 회귀 모델을 동시에 사용하여 거래 로직 구현
 
 2시간 17번 거래중 15번 예측 성공
+(API키는 Binance에서 추가 필요. Future Trading 항목 선택 필수)
 
 ### 사용 라이브러리와 프로그램 목록
 ![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/86cca396-eb35-456c-9fab-098d3a11c8c4)
