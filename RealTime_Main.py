@@ -6,7 +6,7 @@ from datetime import datetime
 conn_params = {
     'user': "tmdgh",
     'password': "tmdgh4321",
-    'host': "35.216.66.247",
+    'host': "DB IP 주소",
     'port': 3306,
     'database': "wpDB",
     'charset': 'utf8mb4',
