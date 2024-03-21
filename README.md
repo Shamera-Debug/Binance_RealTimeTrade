@@ -16,9 +16,13 @@
 
 ### ⚙️ 개발 환경
 언어   : Python   PHP   MySQL
+
 DB     : MariaDB
+
 IDE    : VSCode   DBeaver   MobaXterm
+
 Server : GoogleCloud   Apache2
+
 Data   : Binance   Investing.com   U.Today
 
 ### 개발 일정
