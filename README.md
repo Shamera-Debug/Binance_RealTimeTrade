@@ -1,44 +1,45 @@
-# Binance_RealTimeTrade
-딥러닝(LSTM-CNN)모델을 이용한 BTC,ETH,XRP 주가 예측과 실시간 트레이딩(선물거래 Long Short)
-분류 모델과 회귀 모델을 동시에 사용하여 거래 로직 구현
+# RealTimeTrade_Project
+딥러닝 + 자동 매매
 
-2시간 17번 거래중 15번 예측 성공
-(API키는 Binance에서 추가 필요. Future Trading 항목 선택 필수)
+## 🖥️ 프로젝트 소개
+암호화폐 주가 데이터를 활용하여 비트코인, 이더리움, 리플의 주가를 예측하여 자동 매매 시스템 개발
+<br>
 
-### 사용 라이브러리와 프로그램 목록
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/86cca396-eb35-456c-9fab-098d3a11c8c4)
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/96f48999-d88a-40b5-8e28-b546ac3581d5)
+## 🕰️ 개발 기간
+* 23.12. - 24.03.
 
-### 데이터 수집 종류와 총 개수
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/6db82380-69ca-473d-9ca8-3e0921fa01c3)
+### 🧑‍🤝‍🧑 맴버구성
+- 김현준(팀장) : 데이터 수집 및 모델링, 실시간 매매 구현
+- 백승호 : 데이터 분석 및 모델링
+- 최지현 : 웹 구현
+- 황진영 : 데이터 수집
+
+### ⚙️ 개발 환경
+언어   : Python   PHP   MySQL
+DB     : MariaDB
+IDE    : VSCode   DBeaver   MobaXterm
+Server : GoogleCloud   Apache2
+Data   : Binance   Investing.com   U.Today
+
+### 개발 일정
+![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/44c5f7a1-4a53-4310-8b29-a894c47c6aa5)
 
 
-### 전처리 과정 Flow Chart
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/a5b7d473-9e28-4dad-b062-446b7220a3f4)
+## 📌 주요 기능
+#### 회귀 모델 + 분류 모델 동시 사용
+분류 모델을 사용하여 주가가 상승할지 하락할지에 대한 확실성을 높이고
+회귀 모델을 통해 실제로 예상되는 수익률을 계산함으로써
+수수료가 발생하더라도 이익을 볼 수 있는 거래 지점을 예측
 
-### 전처리 과정
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/4dd2ef1e-0222-47b2-b353-34dd37cbd401)
+#### 1분단위 주가 예측
+주기적으로 Binance 서버 타임을 가져와 정확히 매분 00초에 예측 수행 -> 매매 방식으로 진행
 
-### 뉴스 데이터 처리 과정
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/c09cc087-a330-4114-b5dc-e6ce0b0473ca)
+#### Binance 지갑 정보
+api_key와 api_secret 정보를 입력한 후 코드 이용가능
+아래와 같은 정보 확인
+![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/4af9be2d-8ff2-451b-9f4d-1086f74cbdfb)
 
-
-### 분류 모델 정확도와 혼돈행렬
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/761ecf15-1679-430f-94c7-6aea3ae76ca3)
-
-### 뉴스 데이터 감정분석 결과를 시간별 가중치 적용 후 회귀모델의 결과
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/c9c16b0d-7b34-462d-bfd2-7a281e204c96)
-
-### LSTM-CNN 결합 회귀 모델 결과
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/2ea6a01a-a9ba-4296-b268-40b6124325f3)
-
-### 모델 레이어 구조
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/b315dcda-395b-4b2e-8fbc-e3327aed5295)
-
-### 전체 Flow Chart
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/c547bae2-fbfe-4819-8515-73759f223437)
-
-### 2시건 실시간 거래 결과
-![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/334a0719-12a4-4ab3-a5cf-6a36ecf08abf)
-
+#### WEB 화면에서 현재 자산 정보 확인 가능(GCP 사용 현재 상태 : OFF)
+사이트 주소 : http://35.216.66.247/wordpress/
+![image](https://github.com/Shamera-Debug/Binance_RealTimeTrade/assets/68696549/c1a1aea1-6a0b-4129-83df-b87e1f2534e6)
 
